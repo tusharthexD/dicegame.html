@@ -33,13 +33,7 @@ else{
 
 
 }
-function addName(){
-var player1 = document.getElementById("mytext").innerText;
-var player2 = document.getElementById("mytext2").innerText;
-    document.querySelector(".dice1").inner = "hello";
-    document.querySelector(".dice2").innerText = "heyy";
 
-}
 function openDiv(){
     let get = document.querySelector('#div')
     get.style.display = 'block'
