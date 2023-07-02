@@ -146,3 +146,9 @@ footer {
   border:2px solid #000000;
   border-radius: 3px;
 }
+#first ,#second{
+  height: 8rem;}
+  .win{
+    text-align: center;
+    color: aliceblue;
+  }
