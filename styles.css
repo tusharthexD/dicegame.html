@@ -1,5 +1,4 @@
 .container {
-  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -123,13 +122,13 @@ footer {
 }
 
 .namesec{
-  margin-top: 2rem;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 10%;
+  gap: 10px;
   
 }
 .namebtn{
@@ -162,4 +161,6 @@ footer {
   }
   #divSetPlayerName2 , #divSetPlayerName {
     font-size: 20px;
+    display: flex;
+    gap: 20px;
   }
