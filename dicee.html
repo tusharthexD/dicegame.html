@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body onload= "openDiv()">
+    <div class= "struct" id= "div">
+      <div class= "prompt">
+     <h3>Welcome to my Game, i created this game to check my skills.</h3>
+     <button class="btn" onclick= "closeDiv()">Close</button>
+      </div></div>
+
+    <div class="container">
+       <h1>Press to Play</h1> 
+     <div class="myedit">
+        <div class="dice1">
+        <div class="Names"><p class="playern1" >Player 1</p><img class="player1" ></div>
+        <img id="first" class="img1" src="">
+        </div>
+
+        <div class="dice2">
+        <div class="Names" ><p class="playern2" >Player 2</p><img class="player2"></div>
+        <img id="second" class="img2" src="">
+        </div>
+     </div>
+    </div>
+      <div class="button"><button onclick="roller()" class="btn">Press me</button></div>
+     
+     <div class="namesec">
+      <b><div id="playerName"></div></b>
+      <div id="divSetPlayerName">
+        <input class="nameplayer" type="text" maxlength="12" id="playerNameInput" placeholder="Enter player 1 name" />
+        <button class="namebtn" onclick="setPlayerName();">Submit</button>
+      </div>
+      <b><div id="playerName"></div></b>
+      <div id="divSetPlayerName2">
+        <input class="nameplayer" type="text" maxlength="12" id="playerNameInput2" placeholder="Enter player 2 name" />
+        <button class="namebtn" onclick="setPlayerName2();">Submit</button>
+      </div>
+      </div>
+<script src="index.js" charset="utf-8"></script>
+  </body>
+
+  <footer>
+    www 🎲 Tech Grower 🎲 com
+  </footer>
+</html>
