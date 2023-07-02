@@ -18,14 +18,17 @@ img.src = dice[diceroll2];
 if (diceroll > diceroll2){
     document.querySelector(".player1").src = "./images/flag.png";
     document.querySelector(".player2").src = "";
+    document.querySelector(".win").innerHTML = document.querySelector(".playern1").innerText+ " win" ;
 }
 else if(diceroll == diceroll2){
     document.querySelector(".player1").src = "./images/flag.png";
     document.querySelector(".player2").src = "./images/flag.png";
-}
+    document.querySelector(".win").innerHTML = "Draw";
+}  
 else{
     document.querySelector(".player2").src = "./images/flag.png";
     document.querySelector(".player1").src = "";
+    document.querySelector(".win").innerHTML = document.querySelector(".playern2").innerText+ " win" ;
 }
 
 
