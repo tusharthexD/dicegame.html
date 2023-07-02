@@ -11,21 +11,23 @@ var dice = ["./images/dice1.png",
 
 var diceroll = Math.floor(Math.random()*6)+1;
 var diceroll2 = Math.floor(Math.random()*6)+1;
-img = document.getElementById("first")
+img = document.getElementById("first");
 img.src = dice[diceroll];
-img = document.getElementById("second")
+img = document.getElementById("second");
 img.src = dice[diceroll2];
 if (diceroll > diceroll2){
     document.querySelector(".player1").src = "./images/flag.png";
-    document.querySelector(".player2").src = "";
+    document.querySelector(".player2").src = "./images/lost.png";
     document.querySelector(".win").innerHTML = document.querySelector(".playern1").innerText+ " win" ;
 }
 else if(diceroll == diceroll2){
+    document.querySelector(".player2").src = "./images/draw.png";
+    document.querySelector(".player1").src = "./images/draw.png";
     document.querySelector(".win").innerHTML = "Draw";
 }  
 else{
     document.querySelector(".player2").src = "./images/flag.png";
-    document.querySelector(".player1").src = "";
+    document.querySelector(".player1").src = "./images/lost.png";
     document.querySelector(".win").innerHTML = document.querySelector(".playern2").innerText+ " win" ;
 }
 
